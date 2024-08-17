@@ -1,0 +1,85 @@
+.task{
+    background-color: #30313D;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: opacity .3s linear;
+    min-height: 15px;
+}
+
+.container-task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+
+ .task-name {
+    margin-right: 6px;
+ }
+
+
+.task.done{
+    opacity: 0.3;
+}
+
+.task-name, .task-form{
+    flex-grow:1;
+}
+
+
+.task span{
+    position:relative;
+    margin-left: 10px;
+}
+
+
+.task span:before{
+    content:'';
+    display:block;
+    width:0;
+    height:1px;
+    background-color: #ddd;
+    position:absolute;
+    top: 10px;
+    transition: width .1s linear;
+}
+
+
+.task.done span:before{
+    width: 100%;
+}
+
+
+.checkbox{
+    display:flex;
+    align-items: center;
+}
+
+.trash{
+    background:none;
+    border:none;
+    display:flex;
+    cursor:pointer;
+    height: auto;
+}
+
+
+.task-form input{
+    width: 100%;
+    font-size: 16px;
+    color: #ddd;
+    border: none;
+    padding: 2px 4px;
+    background-color: transparent;
+} 
+
+.task-form input:focus {
+    border: none; /* Garante que não há borda visível */
+    outline: none; /* Remove o contorno visível */
+    box-shadow: none; /* Remove qualquer sombra que possa aparecer no foco */
+}

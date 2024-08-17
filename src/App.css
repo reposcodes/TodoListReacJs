@@ -1,0 +1,17 @@
+body {
+  background-color: #17171f;
+  color: #DDDDDD;
+}
+
+*{
+  box-sizing:  border-box;
+}
+
+main {
+  max-width: 650px;
+  margin: 20px auto;
+}
+
+span, p {
+text-align: center;
+}

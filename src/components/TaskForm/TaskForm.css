@@ -1,0 +1,33 @@
+
+.container-form {
+    border: 3px solid #30313D;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+}
+
+.container-form input[type="text"] {
+    background: none;
+    color: #FFFFFF;
+    border: 0;
+    padding: 0 8px;
+    display: block;
+    width: 100%;
+    min-height: 25px;
+}
+
+.container-form input[type="text"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-button {
+    background-color: #61DAFB;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
